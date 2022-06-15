@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fundamentos - align items</title>
+    <style>
+        .flex-container {
+            max-width: 350px;
+            border: 1px solid black;
+            display: flex;
+        }
+
+        .column {
+            flex-direction: column;
+        }
+
+        .flex-item {
+            background-color: blueviolet;
+            margin: 5px;
+            color: white;
+            text-align: center;
+        }
+
+        .flex {
+            flex: 1;
+        }
+
+        .center {
+            align-items: center;
+        }
+
+        .stretch {
+            align-items: stretch;
+        }
+
+        .flex-start {
+            align-items: flex-start;
+        }
+
+        .flex-end {
+            align-items: flex-end;
+        }
+
+        .baseline {
+            align-items: baseline;
+        }
+
+        .central {
+            height: 300px;
+            justify-content: center;
+        }
+
+        .central .flex-item {
+            flex: 0;
+            padding: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>row</h1>
+    <h2>center</h2>
+    <section class="flex-container flex center">
+        <div class="flex-item">item 1</div>
+        <div class="flex-item">Lorem ipsum dolor section</div>
+        <div class="flex-item">item 3. Mais algum texto pra aumentar e ver como fica. Mais texto.</div>
+    </section>
+    <h2>stretch</h2>
+    <section class="flex-container flex stretch">
+        <div class="flex-item">item 1</div>
+        <div class="flex-item">Lorem ipsum dolor section. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus quisquam minus quasi quos dolorum nisi adipisci non tempore totam distinctio, suscipit, accusamus accusantium nobis numquam. Omnis nostrum cumque consequuntur aliquam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere vitae nihil neque minus debitis quibusdam in officia. Officia quasi amet quisquam a facilis est distinctio. Architecto ipsum dolorem error earum!</div>
+        <div class="flex-item">item 3. Mais algum texto pra aumentar e ver como fica. Mais texto.</div>
+    </section>
+    <h2>flex-start</h2>
+    <section class="flex-container flex flex-start">
+        <div class="flex-item">item 1</div>
+        <div class="flex-item">Lorem ipsum dolor section. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus quisquam minus quasi quos dolorum nisi adipisci non tempore totam distinctio, suscipit, accusamus accusantium nobis numquam. Omnis nostrum cumque consequuntur aliquam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere vitae nihil neque minus debitis quibusdam in officia. Officia quasi amet quisquam a facilis est distinctio. Architecto ipsum dolorem error earum!</div>
+        <div class="flex-item">item 3. Mais algum texto pra aumentar e ver como fica. Mais texto.</div>
+    </section>
+    <h2>flex-end</h2>
+    <section class="flex-container flex flex-end">
+        <div class="flex-item">item 1</div>
+        <div class="flex-item">Lorem ipsum dolor section. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus quisquam minus quasi quos dolorum nisi adipisci non tempore totam distinctio, suscipit, accusamus accusantium nobis numquam. Omnis nostrum cumque consequuntur aliquam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere vitae nihil neque minus debitis quibusdam in officia. Officia quasi amet quisquam a facilis est distinctio. Architecto ipsum dolorem error earum!</div>
+        <div class="flex-item">item 3. Mais algum texto pra aumentar e ver como fica. Mais texto.</div>
+    </section>
+    <h2>baseline</h2>
+    <section class="flex-container baseline">
+        <div class="flex-item">item 1. Eu sei que vou te amar por toda a minha vida eu vou te amar e cada verso meu será pra te dizer que eu sei que vou te amar</div>
+        <div class="flex-item">item 2. Eu sei que vou te amar por toda a minha vida eu vou te amar e cada verso meu será pra te dizer que eu sei que vou te amar</div>
+        <div class="flex-item">item 3. Eu sei que vou te amar por toda a minha vida eu vou te amar e cada verso meu será pra te dizer que eu sei que vou te amar</div>
+    </section>
+    <h1>column</h1>
+    <h2>center</h2>
+    <section class="flex-container flex center column">
+        <div class="flex-item">item 1</div>
+        <div class="flex-item">Lorem ipsum dolor section</div>
+        <div class="flex-item">item 3. Mais algum texto pra aumentar e ver como fica. Mais texto.</div>
+    </section>
+    <h2>stretch</h2>
+    <section class="flex-container flex stretch column">
+        <div class="flex-item">item 1</div>
+        <div class="flex-item">Lorem ipsum dolor section. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus quisquam minus quasi quos dolorum nisi adipisci non tempore totam distinctio, suscipit, accusamus accusantium nobis numquam. Omnis nostrum cumque consequuntur aliquam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere vitae nihil neque minus debitis quibusdam in officia. Officia quasi amet quisquam a facilis est distinctio. Architecto ipsum dolorem error earum!</div>
+        <div class="flex-item">item 3. Mais algum texto pra aumentar e ver como fica. Mais texto.</div>
+    </section>
+    <h2>flex-start</h2>
+    <section class="flex-container flex flex-start column">
+        <div class="flex-item">item 1</div>
+        <div class="flex-item">Lorem ipsum dolor section. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus quisquam minus quasi quos dolorum nisi adipisci non tempore totam distinctio, suscipit, accusamus accusantium nobis numquam. Omnis nostrum cumque consequuntur aliquam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere vitae nihil neque minus debitis quibusdam in officia. Officia quasi amet quisquam a facilis est distinctio. Architecto ipsum dolorem error earum!</div>
+        <div class="flex-item">item 3. Mais algum texto pra aumentar e ver como fica. Mais texto.</div>
+    </section>
+    <h2>flex-end</h2>
+    <section class="flex-container flex flex-end column">
+        <div class="flex-item">item 1</div>
+        <div class="flex-item">Lorem ipsum dolor section. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus quisquam minus quasi quos dolorum nisi adipisci non tempore totam distinctio, suscipit, accusamus accusantium nobis numquam. Omnis nostrum cumque consequuntur aliquam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere vitae nihil neque minus debitis quibusdam in officia. Officia quasi amet quisquam a facilis est distinctio. Architecto ipsum dolorem error earum!</div>
+        <div class="flex-item">item 3. Mais algum texto pra aumentar e ver como fica. Mais texto.</div>
+    </section>
+    <h2>baseline</h2>
+    <section class="flex-container baseline column">
+        <div class="flex-item">item 1</div>
+        <div class="flex-item"><br><br>item 2</div>
+        <div class="flex-item">item 3</div>
+    </section>
+    <p>alinhamento central à tela</p>
+    <section class="flex-container central center">
+        <div class="flex-item">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore non cum nemo atque sunt corporis</div>
+    </section>
+</body>
+</html>
