@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fundamentos - align content</title>
+    <style>
+        .flex-container {
+            height: 400px;
+            max-width: 300px;
+            display: flex;
+            flex-wrap: wrap;
+            border: 1px solid black;
+        }
+
+     
+        .flex-item {
+            background-color: orange;
+            padding: 0 5px;
+            margin: 5px;
+            flex: 1;
+            text-align: center;
+            color: white;
+        }
+
+        .stretch {
+            align-content: stretch;
+        }
+
+        .center {
+            align-content: center;
+        }
+
+        .flex-start {
+            align-content: flex-start;
+        }
+
+        .flex-end {
+            align-content: flex-end;
+        }
+
+        .space-around {
+            align-content: space-around; 
+        }
+
+        .space-between {
+            align-content: space-between;
+        }
+
+
+    </style>
+</head>
+<body>
+    <p>stretch</p>
+    <div class="flex-container stretch">
+        <div class="flex-item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+        <div class="flex-item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+        <div class="flex-item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+        <div class="flex-item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+        <div class="flex-item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+        <div class="flex-item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+        <div class="flex-item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+    </div>
+    <p>center</p>
+    <div class="flex-container center">
+        <div class="flex-item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+        <div class="flex-item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+        <div class="flex-item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+        <div class="flex-item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+        <div class="flex-item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+        <div class="flex-item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+        <div class="flex-item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+    </div>
+    <p>flex-start</p>
+    <div class="flex-container flex-start">
+        <div class="flex-item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+        <div class="flex-item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+        <div class="flex-item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+        <div class="flex-item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+        <div class="flex-item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+        <div class="flex-item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+        <div class="flex-item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+    </div>
+    <p>flex-end</p>
+    <div class="flex-container flex-end">
+        <div class="flex-item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+        <div class="flex-item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+        <div class="flex-item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+        <div class="flex-item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+        <div class="flex-item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+        <div class="flex-item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+        <div class="flex-item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+    </div>
+    <p>space-around</p>
+    <div class="flex-container space-around">
+        <div class="flex-item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+        <div class="flex-item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+        <div class="flex-item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+        <div class="flex-item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+        <div class="flex-item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+        <div class="flex-item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+        <div class="flex-item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+    </div>
+    <p>space-between</p>
+    <div class="flex-container space-between">
+        <div class="flex-item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+        <div class="flex-item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+        <div class="flex-item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+        <div class="flex-item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+        <div class="flex-item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+        <div class="flex-item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+        <div class="flex-item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+    </div>
+
+   
+</body>
+</html>
