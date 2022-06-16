@@ -10,3 +10,9 @@ relacionado:
 (https://www.alura.com.br/artigos/css-guia-do-flexbox?gclid=Cj0KCQjwwJuVBhCAARIsAOPwGARtbKUrRoaSrfEyIJdosiVnd2ZEhgBoAT2rtMlDh781PH4c8Qg2ZT0aAokLEALw_wcB)
 {bem explicado. Muito bom}
 [2022 06 14];
+
+
+## videoaula relacionada
+CSS3 - FLEXBOX (FLEXBOX-ITEM) #6: flex-basis (canal Whasington Developer no Youtube)
+(https://www.youtube.com/watch?v=Oku_pOdHGpY)
+[2022 06 16];

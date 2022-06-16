@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fundamentos - flex basis</title>
+    <style>
+        .flex-container {
+            max-width: 300px;
+            border: 1px solid black;
+            display: flex;
+
+        }
+
+        .flex-item {
+            background-color: coral;
+            color: white;
+            text-align: center;
+            margin: 5px;
+        }
+
+        .flex-basis-auto {
+            flex-basis: auto;
+        }
+
+        .flex-basis-0 {
+            flex-basis: 0;
+        }
+
+        .flex-grow-0 {
+            flex-grow: 0;
+        }
+
+        .flex-grow-1 {
+            flex-grow: 1;
+        }
+
+        .flex-grow-2 {
+            flex-grow: 2;
+        }
+
+    </style>
+</head>
+<body>
+    <p>exemplo 1 com flex-basis auto</p>
+    <div class="flex-container">
+        <div class="flex-item flex-basis-auto flex-grow-0">A</div>
+        <div class="flex-item">BBBBB</div>
+        <div class="flex-item">C</div>
+        <div class="flex-item">DDD</div>
+    </div>
+    <p>exemplo 2 - com flex-basis auto</p>
+    <div class="flex-container">
+        <div class="flex-item flex-basis-auto flex-grow-0">A</div>
+        <div class="flex-item">BBBBB</div>
+        <div class="flex-item">C</div>
+        <div class="flex-item flex-grow-2">DDD</div>
+    </div>
+    <p>exemplo 3 - com flex-basis 0 e flex-grow 1</p>
+    <div class="flex-container">
+        <div class="flex-item flex-basis-0 flex-grow-1">A</div>
+        <div class="flex-item flex-basis-0 flex-grow-1">BBBBB</div>
+        <div class="flex-item flex-basis-0 flex-grow-1">C</div>
+        <div class="flex-item flex-basis-0 flex-grow-1">DDD</div>
+    </div>
+    <p>exemplo 4 - com flex-basis 0 e flex-grow 1 e aumentando o conteúdo</p>
+    <div class="flex-container">
+        <div class="flex-item flex-basis-0 flex-grow-1">A</div>
+        <div class="flex-item flex-basis-0 flex-grow-1">BBBBBBBBBBBB</div>
+        <div class="flex-item flex-basis-0 flex-grow-1">C</div>
+        <div class="flex-item flex-basis-0 flex-grow-1">DDD</div>
+    </div>
+</body>
+</html>
