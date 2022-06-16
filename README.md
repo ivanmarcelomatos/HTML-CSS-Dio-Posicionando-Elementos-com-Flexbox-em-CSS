@@ -16,3 +16,8 @@ relacionado:
 CSS3 - FLEXBOX (FLEXBOX-ITEM) #6: flex-basis (canal Whasington Developer no Youtube)
 (https://www.youtube.com/watch?v=Oku_pOdHGpY)
 [2022 06 16];
+
+
+relacionado:
+## link de Joguinho online pra treinar flexbox
+(https://flexboxfroggy.com/)
