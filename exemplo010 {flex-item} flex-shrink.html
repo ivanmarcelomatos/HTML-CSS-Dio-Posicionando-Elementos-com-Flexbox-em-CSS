@@ -10,7 +10,7 @@
             display: flex;
             border: 1px solid black;
             max-width: 350px;
-            margin-bottom: 30px;
+            
         }
 
         .flex-item {
@@ -20,47 +20,35 @@
             margin: 5px;
         }
 
-        .flex-shrink-1 {
-            flex-shrink: 1;
+        .flex-basis-100 {
+            flex-basis: 100px;
+        }
+        
+        .shrink-1 {
+            flex-shrink: 1;    
         }
 
-        .flex-shrink-0 {
+        .shrink-0 {
             flex-shrink: 0;
-            
-            /* caso necessário, observar o  flex-basis pois ele também interage com o resultado final do flex-shrink */
         }
 
-        .flex-grow-1 {
+        .grow-1 {
             flex-grow: 1;
         }
 
+        .grow-2 {
+            flex-grow: 2;
+        }
 
     </style>
 </head>
 <body>
-    <p>flex-shrink-1</p>
-   <div class="flex-container">
-    <div class="flex-item flex-grow-1 flex-shrink-1">A</div>
-    <div class="flex-item flex-grow-1 flex-shrink-1">B</div>
-    <div class="flex-item flex-grow-1 flex-shrink-1">C</div>
-    <div class="flex-item flex-grow-1 flex-shrink-1">D</div>
-    <div class="flex-item flex-grow-1 flex-shrink-1">E</div>
-   </div>
-   <p>flex-shrink-1</p>
-   <div class="flex-container">
-    <div class="flex-item flex-grow-1 flex-shrink-1">A</div>
-    <div class="flex-item flex-grow-1 flex-shrink-1">The generated lorem ipsum</div>
-    <div class="flex-item flex-grow-1 flex-shrink-1">C</div>
-    <div class="flex-item flex-grow-1 flex-shrink-1">D</div>
-    <div class="flex-item flex-grow-1 flex-shrink-1">E</div>
-   </div>
-   <p>flex-shrink-0</p>
-   <div class="flex-container">
-    <div class="flex-item flex-grow-1 flex-shrink-0">A</div>
-    <div class="flex-item flex-grow-1 flex-shrink-0">The generated lorem ipsum</div>
-    <div class="flex-item flex-grow-1 flex-shrink-0">C</div>
-    <div class="flex-item flex-grow-1 flex-shrink-0">D</div>
-    <div class="flex-item flex-grow-1 flex-shrink-0">E</div>
-   </div>
+    <p>exemplo 01</p>
+    <div class="flex-container">
+        <div class="flex-item grow-2">A</div>
+        <div class="flex-item flex-basis-100">B</div>
+        <div class="flex-item">C</div>
+    
+    </div>
 </body>
 </html>
