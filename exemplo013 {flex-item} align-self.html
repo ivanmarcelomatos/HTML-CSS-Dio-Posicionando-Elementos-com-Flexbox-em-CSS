@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - align self</title>
+    <style>
+        .flex-container {
+            max-width: 350px;
+            margin: 1px solid black;
+            margin-botom: 10px;
+            display: flex;
+        }
+
+        .column {
+            flex-direction: column;
+        }
+
+        .align-container {
+            align-items: center; 
+        }
+
+        .flex-item {
+            background-color: brown;
+            color: white;
+            font-size: 24px;
+            text-align: center;
+            margin: 5px;
+        }
+
+        .center {
+            align-self: center;
+        }
+
+        .start {
+            align-self: flex-start;
+        }
+
+        .end {
+            align-self: flex-end;
+        }
+
+        .baseline {
+            align-self: baseline;
+        }
+
+        .stretch {
+            align-self: stretch;
+        }
+
+        .auto {
+            align-self: auto;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <h1>row</h1>
+    <p>exemplo 01</p>
+    <section class="flex-container align-container">
+        <div class="flex-item auto">AAA</div>
+        <div class="flex-item auto">123</div>
+        <div class="flex-item auto">lorem ipsum is therefore always free from repetition</div>
+        <div class="flex-item auto">item 4</div>
+    </section>
+    <p>exemplo 01.01</p>
+    <section class="flex-container">
+        <div class="flex-item auto">AAA</div>
+        <div class="flex-item auto">123</div>
+        <div class="flex-item auto">lorem ipsum is therefore always free from repetition</div>
+        <div class="flex-item auto">item 4</div>
+    </section>
+    <p>exemplo 01.02</p>
+    <section class="flex-container">
+        <div class="flex-item stretch">AAA</div>
+        <div class="flex-item stretch">123</div>
+        <div class="flex-item auto">lorem ipsum is therefore always free from repetition</div>
+        <div class="flex-item auto">item 4</div>
+    </section>
+    <p>exemplo 01.03</p>
+    <section class="flex-container">
+        <div class="flex-item end">AAA</div>
+        <div class="flex-item end">123</div>
+        <div class="flex-item auto">lorem ipsum is therefore always free from repetition</div>
+        <div class="flex-item auto">item 4</div>
+    </section>
+    <p>exemplo 01.04</p>
+    <section class="flex-container">
+        <div class="flex-item start">AAA</div>
+        <div class="flex-item start">123</div>
+        <div class="flex-item auto">lorem ipsum is therefore always free from repetition</div>
+        <div class="flex-item auto">item 4</div>
+    </section>
+    <p>exemplo 01.05</p>
+    <section class="flex-container">
+        <div class="flex-item start">AAA</div>
+        <div class="flex-item center">123</div>
+        <div class="flex-item auto">lorem ipsum is therefore always free from repetition</div>
+        <div class="flex-item auto">item 4</div>
+    </section>
+    <p>exemplo 02</p>
+    <section class="flex-container">
+        <div class="flex-item center">AAA</div>
+        <div class="flex-item start">AAAaaaaaaaaaa</div>
+        <div class="flex-item end">AAAaaaaaaaaaa</div>
+        <div class="flex-item stretch">Lorem ipsum dolor sit amet consectetur</div>
+    </section>
+
+    <h1>column</h1>
+    <p>exemplo 01</p>
+    <section class="flex-container align-container column">
+        <div class="flex-item auto">AAA</div>
+        <div class="flex-item auto">123</div>
+        <div class="flex-item auto">lorem ipsum is therefore always free from repetition</div>
+        <div class="flex-item auto">item 4</div>
+    </section>
+    <p>exemplo 01.01</p>
+    <section class="flex-container column">
+        <div class="flex-item auto">AAA</div>
+        <div class="flex-item auto">123</div>
+        <div class="flex-item auto">lorem ipsum is therefore always free from repetition</div>
+        <div class="flex-item auto">item 4</div>
+    </section>
+    <p>exemplo 01.02</p>
+    <section class="flex-container column">
+        <div class="flex-item stretch">AAA</div>
+        <div class="flex-item stretch">123</div>
+        <div class="flex-item auto">lorem ipsum is therefore always free from repetition</div>
+        <div class="flex-item auto">item 4</div>
+    </section>
+    <p>exemplo 01.03</p>
+    <section class="flex-container column">
+        <div class="flex-item end">AAA</div>
+        <div class="flex-item end">123</div>
+        <div class="flex-item auto">lorem ipsum is therefore always free from repetition</div>
+        <div class="flex-item auto">item 4</div>
+    </section>
+    <p>exemplo 01.04</p>
+    <section class="flex-container column">
+        <div class="flex-item start">AAA</div>
+        <div class="flex-item start">123</div>
+        <div class="flex-item auto">lorem ipsum is therefore always free from repetition</div>
+        <div class="flex-item auto">item 4</div>
+    </section>
+    <p>exemplo 01.05</p>
+    <section class="flex-container column">
+        <div class="flex-item start">AAA</div>
+        <div class="flex-item center">123</div>
+        <div class="flex-item auto">lorem ipsum is therefore always free from repetition</div>
+        <div class="flex-item auto">item 4</div>
+    </section>
+    <p>exemplo 02</p>
+    <section class="flex-container column">
+        <div class="flex-item stretch">AAA</div>
+        <div class="flex-item start">AAAaaaaaaaaaa</div>
+        <div class="flex-item end">AAAaaaaaaaaaa</div>
+        <div class="flex-item stretch">Lorem ipsum dolor sit amet consectetur</div>
+        <div class="flex-item center">AAA</div>
+    </section>
+
+</body>
+</html>
